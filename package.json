@@ -4,6 +4,10 @@
   "description": "Converts un-encoded HTML symbols to the corresponding HTML-entity codes",
   "publisher": "Zachary-Ratliff",
   "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobeatspie/htmlcharacterconverter.git"
+  },
   "engines": {
     "vscode": "^1.77.0"
   },
