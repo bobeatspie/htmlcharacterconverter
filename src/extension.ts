@@ -89,7 +89,9 @@ const charactersObject: { [key: string]: string; } = {
 	'Ë': '&Euml;',
 	'Ÿ': '&#376;',
 	'œ': '&oelig;',
-	'Œ': '&OElig;'
+	'Œ': '&OElig;',
+	'ł': '&lstrok;',
+	'ż': '&zdot;',
 };
 const commandName = 'htmlcharacterconverter.convertCharacters';
 

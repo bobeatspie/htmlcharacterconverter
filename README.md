@@ -105,7 +105,9 @@ Full list:
 	'Ë': '\&Euml;',
 	'Ÿ': '\&#376;',
 	'œ': '\&oelig;',
-	'Œ': '\&OElig;'
+	'Œ': '\&OElig;',
+	'ł': '&lstrok;',
+	'ż': '&zdot;'
 
 
 Any suggestions or feeback? I'd love to hear: bobeatspie123@gmail.com
