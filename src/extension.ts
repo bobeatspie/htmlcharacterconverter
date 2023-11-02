@@ -142,6 +142,7 @@ export function activate(context: vscode.ExtensionContext) {
 		command: commandName,
 	};
 	statusBarItem.text = 'ñ';
+	statusBarItem.command = myCommand;
 	context.subscriptions.push(statusBarItem);
 	statusBarItem.tooltip = 'Convert un-encoded HTML symbols';
 	statusBarItem.show();

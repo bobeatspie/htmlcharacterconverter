@@ -7,7 +7,9 @@ A simple extension that adds a command "Convert All HMTL Special Characters" to 
 
 You can also run this command by clicking the "&ntilde;" button in the bottom right of your VScode Status Bar.
 
-E.g. Running ""Convert All HMTL Special Characters" replaces: 
+![A tilde-n button in the bottom right of the VScode status bar](https://raw.githubusercontent.com/bobeatspie/htmlcharacterconverter/main/image.png)
+
+E.g. Running "Convert All HMTL Special Characters" replaces: 
 
 'º' with  '\&deg;'
 '½' with '\&frac12;'
@@ -115,6 +117,9 @@ Any suggestions or feeback? I'd love to hear: bobeatspie123@gmail.com
 
 Initial release
 
-### 1.0.1
+### 1.1.0
 
-Updated README, added \&nacute; (&nacute;) support
+Changed name to "HTML special character converter"
+Added status bar button
+Updated README
+added \&nacute; (&nacute;) support
