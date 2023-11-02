@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
-import { encode } from 'punycode';
-import { start } from 'repl';
 import * as vscode from 'vscode';
 const charactersObject: { [key: string]: string; } = {
 	'º': '&deg;',
@@ -93,10 +91,10 @@ const charactersObject: { [key: string]: string; } = {
 	'œ': '&oelig;',
 	'Œ': '&OElig;'
 };
+const commandName = 'htmlcharacterconverter.convertCharacters';
 
 export function activate(context: vscode.ExtensionContext) {
 
-	const commandName = 'htmlcharacterconverter.convertCharacters';
 	let disposable = vscode.commands.registerCommand(commandName, () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
@@ -111,7 +109,6 @@ export function activate(context: vscode.ExtensionContext) {
 		let replacementsToMake: { [key: number]: [vscode.Range, string]; } = {};
 		
 		for (const [unencodedCharacter, encodedCharacter] of Object.entries(charactersObject)) {
-			console.log(unencodedCharacter + " : " + encodedCharacter);
 			for (let i=0; i<doc.lineCount; i++) {
 				const line = doc.lineAt(i);
 				for (j=0; j<line.range.end.character; j++) {
@@ -133,10 +130,9 @@ export function activate(context: vscode.ExtensionContext) {
 		});
 		vscode.window.showInformationMessage(`Made ${replacementCount} character replacements in this file`);
 	});
-
 	context.subscriptions.push(disposable);
+
 	const statusBarItem:vscode.StatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 0);
-	
 	let myCommand: vscode.Command = { 
 		title: 'ñ', 
 		command: commandName,

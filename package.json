@@ -3,7 +3,7 @@
   "displayName": "HMTL Special Character Converter",
   "description": "Converts un-encoded HTML symbols to the corresponding HTML-entity codes",
   "publisher": "Zachary-Ratliff",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/bobeatspie/htmlcharacterconverter.git"
@@ -14,7 +14,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["*"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
