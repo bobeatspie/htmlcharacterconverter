@@ -59,7 +59,7 @@ Full list:
 	'ť': '\&#357;',
 	'ů': '\&#367;',
 	'ý': '\&yacute;',
-    'ń': '\&nacute',
+    'ń': '\&nacute;',
 	'ž': '\&#382;',
 	'Č': '\&#268;',
 	'Ď': '\&#270;',
@@ -107,7 +107,12 @@ Full list:
 	'œ': '\&oelig;',
 	'Œ': '\&OElig;',
 	'ł': '&lstrok;',
-	'ż': '&zdot;'
+	'ż': '&zdot;',
+	'ć': '&cacute;',
+	'ę': '&eogon;',
+	'ą': '&aogon;',
+	'ś': '&sacute;',
+	'ź': '&zacute;'
 
 
 Any suggestions or feeback? I'd love to hear: bobeatspie123@gmail.com
